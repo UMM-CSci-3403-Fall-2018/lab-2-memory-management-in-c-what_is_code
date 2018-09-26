@@ -39,13 +39,11 @@ char *palindrome(char const *str) {
     answer[1] = 'e';
     answer[2] = 's';
     answer[3] = '\0';
-    free(result);
   } else {
     answer = (char*) calloc(3, sizeof(char));
     answer[0] = 'N';
     answer[1] = 'o';
     answer[2] = '\0';
-    free(free);
   }
   free(rev);
 
