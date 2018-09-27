@@ -17,6 +17,7 @@ void not_palindrome(char const *str) {
 
 TEST(Palindrome, HandlesEmptyString) {
   is_palindrome("");
+
 }
 
 TEST(Palindrome, HandlesSingletons) {
