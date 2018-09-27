@@ -8,18 +8,28 @@
 char *disemvowel(char *str) {
 	int length, i;
 	char *result;
-	int pointer = 0;
-	int notVowelCounter =0;
+	int pointer;
+
+
+	// Set them equal to zero so that it does not allocate extra space.
+
+	i = 0;
+	pointer = 0;
+	
 
 	//Set length to be of string
 	length = strlen(str);
 
-	//Loop that counts number of times vowel is not in the given string
-	for (i=0; i < length ; ++i) 
+// might have to add more here
+
+	//Loop that checks the string for vowels and removes the vowel
+	for (i < length) 
 	{ if 
-		(tolower(str[i]) != 'a' && tolower(str[i]) != 'e' && tolower(str[i]) != 'i' && tolower(str[i]) != 'o' && tolower(str[i]) != 'u')
-		{
-	  notVowelCounter++;
+        (tolower(str[i]) != 'a' && tolower(str[i]) != 'e' && tolower(str[i]) != 'i' && tolower(str[i]) != 'o' && tolower(str[i]) != 'u')
+	else {
+	result[pointer] = str[i];
+	i++;
+	pointer++;
 		}
   }
 
