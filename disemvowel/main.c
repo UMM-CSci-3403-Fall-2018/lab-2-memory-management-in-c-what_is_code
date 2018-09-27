@@ -6,11 +6,17 @@
 int main(int argc, char *argv[]) {
   char *line;
   size_t size;
-  
+  char *diseMvd;
+
   size = 100;
   line = (char*) malloc (size + 1);
 
   while (getline(&line, &size, stdin) > 0) {
-    printf("%s\n", disemvowel(line));
+    diseMvd = disemvowel(line);
+	  printf("%s\n", disemvowel(line));
+  free(diseMvd);
   }
+
+  free(line);
+
 }
