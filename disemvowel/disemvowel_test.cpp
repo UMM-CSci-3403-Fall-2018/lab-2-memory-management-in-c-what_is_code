@@ -56,7 +56,7 @@ TEST(Disemvowel, HandleLongString) {
   }
   str[size-1] = '\0';
   
-  char *finResult = disemvowel((char*) "xyz");
+  char *finResult = disemvowel(str;
   ASSERT_STREQ("xyz", finResult);
 
   free(str);
