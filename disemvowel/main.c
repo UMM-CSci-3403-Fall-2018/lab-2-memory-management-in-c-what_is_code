@@ -13,9 +13,9 @@ int main(int argc, char *argv[]) {
 
   while (getline(&line, &size, stdin) > 0) {
     diseMvd = disemvowel(line);
-	  printf("%s\n", disemvowel(line));
-  free(diseMvd) 
-	
+	  printf("%s\n", diseMvd);
+  free(diseMvd); 
+  
   }
 
   free(line);
